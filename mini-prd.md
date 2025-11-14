@@ -1,3 +1,4 @@
+
 🧍 Host Side (Event Creator)
 	1.	Landing Page / Home
 	•	Short description of what the platform does.
