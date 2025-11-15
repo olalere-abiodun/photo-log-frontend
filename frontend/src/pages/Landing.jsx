@@ -200,50 +200,50 @@ export default function Landing() {
       </section>
 
       {/* Key Features Section */}
-      <section className="py-24 bg-deep-green">
+      <section className="py-12 sm:py-16 lg:py-24 bg-deep-green">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4">
               Why PhotoLog
             </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto px-4">
               Everything you need to collect and manage event photos effortlessly
             </p>
           </div>
 
           {/* Feature 1: Full-width image with overlay text */}
-          <div className="mb-32 relative">
-            <div className="aspect-[21/9] overflow-hidden rounded-3xl">
+          <div className="mb-16 sm:mb-24 lg:mb-32 relative">
+            <div className="aspect-[4/3] sm:aspect-[21/9] overflow-hidden rounded-2xl sm:rounded-3xl">
               <img
                 src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
                 alt="Phone scanning QR code"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-deep-green via-deep-green/80 to-transparent flex items-center">
-              <div className="max-w-2xl px-8 lg:px-12 py-12">
-                <h3 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <div className="absolute inset-0 bg-gradient-to-b sm:bg-gradient-to-r from-deep-green via-deep-green/90 sm:via-deep-green/80 to-transparent flex items-end sm:items-center rounded-2xl sm:rounded-3xl">
+              <div className="max-w-2xl px-4 sm:px-6 lg:px-12 py-6 sm:py-8 lg:py-12">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 lg:mb-6">
                   No App Required
                 </h3>
-                <p className="text-xl text-white/90 leading-relaxed mb-4">
+                <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed mb-3 sm:mb-4">
                   Guests simply scan your QR code and upload photos directly from their phone's browser. No downloads, no signups, no hassle.
                 </p>
-                <span className="text-sm text-white/70 uppercase tracking-wider">Instant Access</span>
+                <span className="text-xs sm:text-sm text-white/70 uppercase tracking-wider">Instant Access</span>
               </div>
             </div>
           </div>
 
           {/* Feature 2: Centered text with side-by-side images */}
-          <div className="mb-32">
-            <div className="text-center mb-12 max-w-3xl mx-auto">
-              <h3 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <div className="mb-16 sm:mb-24 lg:mb-32">
+            <div className="text-center mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto px-4">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 lg:mb-6">
                 Full Control
               </h3>
-              <p className="text-xl text-white/80 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg lg:text-xl text-white/80 leading-relaxed mb-6 sm:mb-8">
                 Moderate every photo before it goes live. Delete unwanted images, download everything as a ZIP, or remove your event entirely—you're in complete control.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               <div className="aspect-[4/3] overflow-hidden rounded-xl">
                 <img
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
@@ -259,30 +259,30 @@ export default function Landing() {
                 />
               </div>
             </div>
-            <div className="text-center mt-8">
-              <span className="text-sm text-white/60 uppercase tracking-wider">Your Gallery, Your Rules</span>
+            <div className="text-center mt-6 sm:mt-8">
+              <span className="text-xs sm:text-sm text-white/60 uppercase tracking-wider">Your Gallery, Your Rules</span>
             </div>
           </div>
 
           {/* Feature 3: Split screen with gradient */}
-          <div className="grid lg:grid-cols-2 gap-0 overflow-hidden rounded-3xl">
-            <div className="aspect-[3/4] lg:aspect-auto overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-0 overflow-hidden rounded-2xl sm:rounded-3xl">
+            <div className="aspect-[4/3] sm:aspect-[3/4] lg:aspect-auto lg:min-h-[500px] overflow-hidden order-2 lg:order-1">
               <img
                 src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
                 alt="Secure event gallery"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="bg-gradient-to-br from-teal-brown to-deep-green flex flex-col justify-center px-8 lg:px-12 py-16">
-              <h3 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <div className="bg-gradient-to-br from-teal-brown to-deep-green flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-12 sm:py-14 lg:py-16 order-1 lg:order-2">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 lg:mb-6">
                 Privacy First
               </h3>
-              <p className="text-xl text-white/90 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed mb-6 sm:mb-7 lg:mb-8">
                 Optional password protection keeps your gallery secure. Only people with your QR code or link can access and upload photos.
               </p>
               <div className="flex items-center space-x-2 text-white/70">
-                <div className="h-px w-12 bg-white/40"></div>
-                <span className="text-sm uppercase tracking-wider">Secure & Private</span>
+                <div className="h-px w-8 sm:w-12 bg-white/40"></div>
+                <span className="text-xs sm:text-sm uppercase tracking-wider">Secure & Private</span>
               </div>
             </div>
           </div>
