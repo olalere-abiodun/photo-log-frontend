@@ -545,6 +545,244 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="py-32 bg-gradient-to-b from-white to-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl sm:text-6xl font-bold text-black mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-xl text-black/70 max-w-2xl mx-auto">
+              Choose the plan that fits your event needs. All plans include instant QR codes and photo sharing.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
+            {/* Starter Plan */}
+            <div className="bg-white rounded-3xl p-8 border-2 border-black/5 relative">
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-black mb-3">Starter</h3>
+                <div className="mb-6">
+                  <span className="text-5xl font-bold text-black">$9</span>
+                  <span className="text-xl text-black/60">/month</span>
+                </div>
+                <p className="text-black/70 leading-relaxed">
+                  Perfect for small events and personal celebrations
+                </p>
+              </div>
+
+              <div className="space-y-6 mb-10">
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">5 Events</div>
+                    <div className="text-sm text-black/60">per month</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">1,000 Photos</div>
+                    <div className="text-sm text-black/60">total storage</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">10 GB Storage</div>
+                    <div className="text-sm text-black/60">per event</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">All Core Features</div>
+                    <div className="text-sm text-black/60">QR codes, moderation, download</div>
+                  </div>
+                </div>
+              </div>
+
+              <Link
+                to="/signup"
+                className="block w-full text-center px-6 py-4 rounded-xl bg-deep-green text-white font-semibold hover:bg-deep-green-dark transition-colors"
+              >
+                Get Started
+              </Link>
+            </div>
+
+            {/* Professional Plan - Featured */}
+            <div className="bg-gradient-to-br from-deep-green to-teal-brown rounded-3xl p-8 border-4 border-gold relative transform lg:-translate-y-4 lg:scale-105">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span className="bg-gold text-black px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider">
+                  Most Popular
+                </span>
+              </div>
+              
+              <div className="mb-8 mt-4">
+                <h3 className="text-2xl font-bold text-white mb-3">Professional</h3>
+                <div className="mb-6">
+                  <span className="text-5xl font-bold text-white">$29</span>
+                  <span className="text-xl text-white/80">/month</span>
+                </div>
+                <p className="text-white/90 leading-relaxed">
+                  Ideal for frequent events and business use
+                </p>
+              </div>
+
+              <div className="space-y-6 mb-10">
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-white">20 Events</div>
+                    <div className="text-sm text-white/80">per month</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-white">10,000 Photos</div>
+                    <div className="text-sm text-white/80">total storage</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-white">50 GB Storage</div>
+                    <div className="text-sm text-white/80">per event</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-white">Priority Support</div>
+                    <div className="text-sm text-white/80">faster response times</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-white">Advanced Analytics</div>
+                    <div className="text-sm text-white/80">insights and reports</div>
+                  </div>
+                </div>
+              </div>
+
+              <Link
+                to="/signup"
+                className="block w-full text-center px-6 py-4 rounded-xl bg-white text-deep-green font-bold hover:bg-cream transition-colors"
+              >
+                Get Started
+              </Link>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div className="bg-white rounded-3xl p-8 border-2 border-black/5 relative">
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-black mb-3">Enterprise</h3>
+                <div className="mb-6">
+                  <span className="text-5xl font-bold text-black">$99</span>
+                  <span className="text-xl text-black/60">/month</span>
+                </div>
+                <p className="text-black/70 leading-relaxed">
+                  For large organizations and unlimited needs
+                </p>
+              </div>
+
+              <div className="space-y-6 mb-10">
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">Unlimited Events</div>
+                    <div className="text-sm text-black/60">create as many as you need</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">Unlimited Photos</div>
+                    <div className="text-sm text-black/60">no storage limits</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">500 GB Storage</div>
+                    <div className="text-sm text-black/60">per event</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">Dedicated Support</div>
+                    <div className="text-sm text-black/60">24/7 account manager</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">Custom Branding</div>
+                    <div className="text-sm text-black/60">white-label options</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-deep-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold text-black">API Access</div>
+                    <div className="text-sm text-black/60">integrate with your tools</div>
+                  </div>
+                </div>
+              </div>
+
+              <Link
+                to="/signup"
+                className="block w-full text-center px-6 py-4 rounded-xl bg-deep-green text-white font-semibold hover:bg-deep-green-dark transition-colors"
+              >
+                Contact Sales
+              </Link>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-black/60 text-sm mb-2">
+              All plans include a 14-day free trial. No credit card required.
+            </p>
+            <p className="text-black/60 text-sm">
+              Need custom pricing? <a href="#" className="text-deep-green hover:text-emerald font-medium">Contact us</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-32 bg-gradient-to-br from-deep-green via-deep-green-dark to-deep-green relative overflow-hidden">
         {/* Background Pattern */}
