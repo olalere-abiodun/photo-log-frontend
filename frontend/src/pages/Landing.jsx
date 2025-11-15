@@ -288,6 +288,262 @@ export default function Landing() {
           </div>
         </div>
       </section>
+
+      {/* Use Cases Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl sm:text-6xl font-bold text-black mb-4">
+              Perfect for Every Event
+            </h2>
+            <p className="text-xl text-black/70 max-w-2xl mx-auto">
+              From intimate gatherings to grand celebrations, PhotoLog works for any occasion
+            </p>
+          </div>
+
+          {/* Event Type 1: Weddings */}
+          <div className="mb-16">
+            <div className="grid lg:grid-cols-5 gap-8 items-center">
+              <div className="lg:col-span-3 order-2 lg:order-1">
+                <div className="aspect-[16/10] overflow-hidden rounded-3xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
+                    alt="Wedding celebration"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-2 order-1 lg:order-2 flex flex-col justify-center px-4 lg:px-8">
+                <h3 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+                  Weddings
+                </h3>
+                <p className="text-lg text-black/70 leading-relaxed mb-6">
+                  Collect all the special moments from your big day. Guests share their favorite shots instantly, giving you memories from every angle.
+                </p>
+                <span className="text-sm text-deep-green uppercase tracking-wider font-medium">Share the Love</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Event Type 2: Corporate Events */}
+          <div className="mb-16">
+            <div className="grid lg:grid-cols-5 gap-8 items-center">
+              <div className="lg:col-span-2 order-1 lg:order-1 flex flex-col justify-center px-4 lg:px-8 lg:text-right">
+                <h3 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+                  Corporate Events
+                </h3>
+                <p className="text-lg text-black/70 leading-relaxed mb-6">
+                  Capture networking moments, presentations, and team celebrations. Professional galleries for professional gatherings.
+                </p>
+                <span className="text-sm text-teal-brown uppercase tracking-wider font-medium inline-block">Professional Network</span>
+              </div>
+              <div className="lg:col-span-3 order-2 lg:order-2">
+                <div className="aspect-[16/10] overflow-hidden rounded-3xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
+                    alt="Corporate event"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Event Type 3: Birthday Celebrations */}
+          <div className="mb-16">
+            <div className="grid lg:grid-cols-5 gap-8 items-center">
+              <div className="lg:col-span-3 order-2 lg:order-1">
+                <div className="aspect-[16/10] overflow-hidden rounded-3xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
+                    alt="Birthday party"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-2 order-1 lg:order-2 flex flex-col justify-center px-4 lg:px-8">
+                <h3 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+                  Birthdays
+                </h3>
+                <p className="text-lg text-black/70 leading-relaxed mb-6">
+                  Make every birthday memorable. Friends and family share their favorite moments from the celebration in one beautiful gallery.
+                </p>
+                <span className="text-sm text-accent-pink uppercase tracking-wider font-medium">Celebrate Together</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Event Type 4: Conferences */}
+          <div>
+            <div className="grid lg:grid-cols-5 gap-8 items-center">
+              <div className="lg:col-span-2 order-1 lg:order-1 flex flex-col justify-center px-4 lg:px-8 lg:text-right">
+                <h3 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+                  Conferences
+                </h3>
+                <p className="text-lg text-black/70 leading-relaxed mb-6">
+                  Document sessions, keynotes, and networking. Participants share insights and connections from across the event.
+                </p>
+                <span className="text-sm text-deep-gold uppercase tracking-wider font-medium inline-block">Connect & Share</span>
+              </div>
+              <div className="lg:col-span-3 order-2 lg:order-2">
+                <div className="aspect-[16/10] overflow-hidden rounded-3xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
+                    alt="Tech conference"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof & Stats Section */}
+      <section className="py-32 bg-gradient-to-br from-cream via-cream-light to-cream overflow-hidden relative">
+        {/* Background decorative element */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-deep-green/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-24">
+            <div className="text-center lg:text-left">
+              <div className="text-5xl sm:text-6xl lg:text-7xl font-bold text-deep-green mb-3">
+                10K+
+              </div>
+              <div className="text-lg text-black/70 font-medium">
+                Events Created
+              </div>
+            </div>
+            <div className="text-center lg:text-left">
+              <div className="text-5xl sm:text-6xl lg:text-7xl font-bold text-deep-green mb-3">
+                500K+
+              </div>
+              <div className="text-lg text-black/70 font-medium">
+                Photos Shared
+              </div>
+            </div>
+            <div className="text-center lg:text-left">
+              <div className="text-5xl sm:text-6xl lg:text-7xl font-bold text-deep-green mb-3">
+                50K+
+              </div>
+              <div className="text-lg text-black/70 font-medium">
+                Happy Hosts
+              </div>
+            </div>
+            <div className="text-center lg:text-left">
+              <div className="text-5xl sm:text-6xl lg:text-7xl font-bold text-deep-green mb-3">
+                99%
+              </div>
+              <div className="text-lg text-black/70 font-medium">
+                Satisfaction Rate
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonials - Overlapping Cards Style */}
+          <div className="relative">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-4">
+                Loved by Event Hosts
+              </h2>
+              <p className="text-xl text-black/70 max-w-2xl mx-auto">
+                See what people are saying about PhotoLog
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+              {/* Testimonial 1 */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-black/5 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-300">
+                <div className="mb-6">
+                  <div className="flex space-x-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="text-lg text-black/80 leading-relaxed mb-6">
+                    "PhotoLog made our wedding photo collection effortless. Guests loved how easy it was to upload, and we got so many amazing moments we would have missed otherwise."
+                  </p>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-deep-green to-emerald overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        alt="Sarah"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <div className="font-bold text-black">Sarah Chen</div>
+                      <div className="text-sm text-black/60">Wedding Host</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 2 - Offset slightly */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-black/5 transform lg:rotate-1 lg:translate-y-8 hover:rotate-0 hover:translate-y-0 transition-transform duration-300">
+                <div className="mb-6">
+                  <div className="flex space-x-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="text-lg text-black/80 leading-relaxed mb-6">
+                    "As an event planner, PhotoLog saves me hours. No more chasing guests for photos or dealing with messy file sharing. It's professional, elegant, and just works."
+                  </p>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-brown to-deep-green overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        alt="Marcus"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <div className="font-bold text-black">Marcus Johnson</div>
+                      <div className="text-sm text-black/60">Event Planner</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-black/5 transform lg:-rotate-1 lg:translate-y-4 hover:rotate-0 hover:translate-y-0 transition-transform duration-300">
+                <div className="mb-6">
+                  <div className="flex space-x-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="text-lg text-black/80 leading-relaxed mb-6">
+                    "The QR code feature is brilliant. At our tech conference, attendees scanned and shared photos instantly. We had a complete gallery within hours of the event ending."
+                  </p>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald to-deep-green overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        alt="David"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <div className="font-bold text-black">David Park</div>
+                      <div className="text-sm text-black/60">Conference Organizer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
