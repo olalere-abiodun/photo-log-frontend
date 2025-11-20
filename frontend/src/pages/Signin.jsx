@@ -1,9 +1,11 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import {signIn, signInWithGoogle } from '../services/api'
+import { signIn, signInWithGoogle, sendEmailVerification } from '../services/api';
 
 export default function Signin() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || '/';
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -18,8 +20,25 @@ export default function Signin() {
     setLoading(true);
 
     try {
-      await signIn(formData.email, formData.password);
-      navigate('/'); // Redirect to home or dashboard
+      const response = await signIn(formData.email, formData.password);
+      
+      // Check if email is verified
+      if (response.user && !response.user.email_verified) {
+        // Send verification email
+        try {
+          await sendEmailVerification(response.user.email || formData.email);
+        } catch (verifyError) {
+          console.warn('Failed to send verification email:', verifyError);
+          // Continue anyway - user can request it again on verify page
+        }
+        // Redirect to verify email page
+        navigate('/verify-email', { 
+          state: { email: response.user.email || formData.email, from } 
+        });
+      } else {
+        // Email is verified, redirect to the page they were trying to access or dashboard
+        navigate(from);
+      }
     } catch (err) {
       setError(err.message || 'Failed to sign in. Please try again.');
     } finally {
@@ -32,8 +51,21 @@ export default function Signin() {
     setLoading(true);
 
     try {
-      await signInWithGoogle();
-      navigate('/');
+      const response = await signInWithGoogle();
+      
+      // Google sign-in typically verifies email automatically, but check anyway
+      if (response.user && !response.user.email_verified) {
+        try {
+          await sendEmailVerification(response.user.email);
+        } catch (verifyError) {
+          console.warn('Failed to send verification email:', verifyError);
+        }
+        navigate('/verify-email', { 
+          state: { email: response.user.email, from } 
+        });
+      } else {
+        navigate(from);
+      }
     } catch (err) {
       setError(err.message || 'Failed to sign in with Google.');
     } finally {

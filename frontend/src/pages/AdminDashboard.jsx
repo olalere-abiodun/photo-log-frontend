@@ -12,6 +12,7 @@ import {
   ArrowRightOnRectangleIcon,
 } from '@heroicons/react/24/outline';
 import { signOut, getAdminOverview, getAdminEvents, getAdminRecentUploads, updateEventStatus, deleteAdminEvent } from '../services/api';
+import { signOut } from '../services/api';
 
 export default function AdminDashboard() {
   const navigate = useNavigate();
